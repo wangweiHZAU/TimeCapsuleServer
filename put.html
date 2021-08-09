@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>添加</title>
+  <link rel="stylesheet" href="styles/basic.css">
+  <link rel="stylesheet" href="styles/add.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="scripts/put.js"></script>
+</head>
+<body>
+  <div class="content">
+    <div class="header">
+      <div class="logo">
+        <img src="img/logo.gif" alt="">
+      </div>
+      <div class="title">
+        <div class="homepage"><a href="index.html">首页</a></div>
+        <div class="add"><a href="put.html">添加</a></div>
+        <div class="open"><a href="open.html">打开</a></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="title">添加胶囊</div>
+      <form>
+        <div class="label">你的名字</div>
+        <input name="name" value type="text">
+        <div class="label">你的邮箱</div>
+        <input name="email" value type="text">
+        <div class="label">打开时间</div>
+        <input name="time" value type="text">
+        <span class="tips">在打开时间之前，胶囊内容是看不到的。</span>
+        <div class="label">胶囊内容</div>
+        <textarea name="content" value cols="100" rows="10"></textarea><br>
+        <span class="tips">胶囊内容不能超过5000字</span>
+        <div class="label">未到期提示信息</div>
+        <textarea name="tips" value cols="100" rows="5"></textarea><br>
+        <span class="tips">在 打开时间 之前打开胶囊，会看到提示信息。</span>
+        <p>
+          <input type="submit" onclick="this.disabled = false; this.value='正在添加...';getText();return false" value="添加胶囊">
+        </p>
+      </form>
+    </div>
+    <div class="keys hide">
+      <div class="title">保存胶囊</div>
+      <div class="label">时间胶囊的密码为</div>
+      <input name="keys" type="text">
+    </div>
+  </div>
+</body>
+
+
+</html>

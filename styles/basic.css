@@ -1,0 +1,30 @@
+*
+{
+  box-sizing: border-box;
+}
+body, html
+{
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.flex-horizon
+{
+  display: flex;
+}
+.flex-vertical
+{
+  display: flex;
+  flex-direction: column;
+}
+a 
+{
+  text-decoration: none;
+  color: #555555;
+}
+/* ::before
+{
+  content: "\0A00";
+} */
